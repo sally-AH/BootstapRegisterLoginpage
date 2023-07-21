@@ -19,9 +19,9 @@
         </p>
       </div>
       <div class="card-body">
-        <form>
+        <form id="login-form">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Username" autofocus>
+            <input type="text" id="username" class="form-control" placeholder="Username" autofocus>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fa fa-user"></span>
@@ -29,7 +29,7 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" id="userpassword" class="form-control" placeholder="Password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fa fa-lock"></span>
@@ -38,9 +38,7 @@
           </div>
           <div class="row">
             <div class="col-lg-6">
-              <button type="button" class="btn btn-primary btn-block">
-                Sign In
-              </button>
+              <input type="submit" class="btn btn-primary btn-block" value="Sign In">
             </div>
             <div class="col-lg-6">
               <a href="index.html">Sign Up Here</a>
@@ -50,6 +48,11 @@
       </div>
     </div>
   </div>
+
+  <script src="script.js"></script>
+  <script>
+    pages.load_page("login");
+  </script>
 </body>
 
 </html>
